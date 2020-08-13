@@ -1,18 +1,21 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <BootstraoDateInput type="text" placeholder="enter your msg"/> -->
+    <!-- <Click/> -->
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+// import BootstraoDateInput from '@/components/BootstraoDateInput.vue'
+// import Click from '@/components/click.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    // BootstraoDateInput,
+    // Click
   }
 }
 </script>
