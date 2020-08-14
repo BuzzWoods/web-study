@@ -12,13 +12,14 @@
 
 <script>
 import layout from './components/layout/index.vue'
-import getScreenWidth from './mixins/getScreenWidth.js'
+import handleResize from './mixins/handleResize.js'
 
 export default {
   components: {
     layout
   },
-  mixins: [getScreenWidth]
+  mixins: [handleResize]
+
 }
 </script>
 

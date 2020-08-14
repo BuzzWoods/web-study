@@ -1,8 +1,12 @@
-import vuex from 'vuex'
-import common from './modules/common'
-const store = new vuex.Store({
+import Vue from 'vue'
+import Vuex from 'vuex'
+import layout from './modules/layout'
+
+Vue.use(Vuex)
+
+const store = new Vuex.Store({
   modules: {
-    common
+    layout
   }
 })
 
