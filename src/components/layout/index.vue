@@ -1,13 +1,13 @@
 <template>
     <div>
       <Header></Header>
-      <SideBar></SideBar>
+      <Content></Content>
     </div>
 </template>
 
 <script>
 import Header from '../layout/Header'
-import SideBar from '../layout/SideBar'
+import Content from '../layout/Content'
 
 export default {
   data () {
@@ -17,7 +17,7 @@ export default {
   },
   components: {
     Header,
-    SideBar
+    Content
   },
   methods: {
 

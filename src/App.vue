@@ -5,8 +5,8 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/function">功能</router-link>
-    </div>-->
-    <!-- <router-view/> -->
+    </div>
+    <router-view/> -->
   </div>
 </template>
 
@@ -18,8 +18,8 @@ export default {
   components: {
     layout
   },
+  // 混入响应屏幕宽度
   mixins: [handleResize]
-
 }
 </script>
 

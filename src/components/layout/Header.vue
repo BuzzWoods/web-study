@@ -12,11 +12,15 @@
         </el-button>
       </div>
       <div v-show="!isMobile">
-        <el-menu menu-trigger="click" class="el-menu-demo" mode="horizontal">
+        <el-menu :menu-trigger="isMobile ? 'click':'hover'" class="el-menu-demo" mode="horizontal">
           <el-submenu index="1">
             <template slot="title">学习</template>
             <el-menu-item index="1-1">javaScript</el-menu-item>
-            <el-menu-item index="1-2">VUE</el-menu-item>
+            <el-menu-item index="1-2">
+              <router-link to="/vue">
+                VUE
+              </router-link>
+            </el-menu-item>
             <el-menu-item index="1-3">React</el-menu-item>
             <el-menu-item index="1-4">Web API</el-menu-item>
             <el-menu-item index="1-5">Network</el-menu-item>

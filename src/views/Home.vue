@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    首页
     <img alt="Vue logo" src="../assets/logo.png">
     <!-- <BootstraoDateInput type="text" placeholder="enter your msg"/> -->
     <!-- <Click/> -->

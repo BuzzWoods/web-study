@@ -1,6 +1,7 @@
 <template>
     <div>
-      自定义指令的v-model
+      Vue Part
+      <router-view></router-view>
     </div>
 </template>
 
