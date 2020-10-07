@@ -1,19 +1,14 @@
 <template>
     <div>
-      自定义指令的v-model
-      <vmodel></vmodel>
+      emit
+
     </div>
 </template>
 
 <script>
-import vmodel from '../../components/CustomEvents/model'
-
 export default {
   props: {
 
-  },
-  components: {
-    vmodel
   },
   data () {
     return {

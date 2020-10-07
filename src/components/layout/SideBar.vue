@@ -1,5 +1,5 @@
 <template>
-  <div class="sideBar">
+  <div class="sideBar" v-if="!isMobile">
     <div class="sideBar-wrap">
       <ul>
         <li v-for="(item, index) in vueList" :key="index">
@@ -11,6 +11,7 @@
 </template>
 
 <script>
+// import { mapState } from 'vuex'
 export default {
   props: {
 
@@ -19,18 +20,16 @@ export default {
     return {
       vueList: [
         {
-          name: '1.自定义组建的v-model',
-          path: '/vue/customInstruction'
-        },
-        {
-          name: '2.将原生事件绑定到组件',
-          path: '/vue/componentBindNativeEvent'
+          name: '1.自定义组件',
+          path: '/vue/component'
         }
       ]
     }
   },
   computed: {
-
+    isMobile () {
+      return this.$store.state.layout.isMobile
+    }
   },
   created () {
 

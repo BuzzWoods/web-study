@@ -1,6 +1,9 @@
 <template>
     <div>
-      将原生事件绑定到组件
+      <span>text</span>
+      <button @click="handleFontSize">
+        enlarg text
+      </button>
     </div>
 </template>
 
@@ -11,17 +14,12 @@ export default {
   },
   data () {
     return {
-
     }
   },
-  computed: {
-
-  },
-  created () {
-
-  },
   methods: {
-
+    handleFontSize () {
+      this.$emit('text-enlarge', 1)
+    }
   }
 }
 </script>

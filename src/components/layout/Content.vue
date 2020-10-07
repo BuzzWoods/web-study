@@ -43,6 +43,7 @@ export default {
 .content-wrap{
   display: block;
   max-width: 700px;
+  padding: 20px;
   margin: 0 auto;
 }
 </style>

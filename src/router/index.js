@@ -19,14 +19,9 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/vue/index.vue'),
     children: [
       {
-        path: 'customInstruction',
-        name: 'CustomInstruction',
-        component: () => import('../views/vue/CustomInstruction.vue')
-      },
-      {
-        path: 'componentBindNativeEvent',
-        name: 'ComponentBindNativeEvent',
-        component: () => import('../views/vue/ComponentBindNativeEvent.vue')
+        path: 'component',
+        name: 'component',
+        component: () => import('../views/vue/component.vue')
       }
     ]
   }

@@ -1,6 +1,6 @@
 <template>
     <div>
-      Vue Part
+      Vue Component
       <router-view></router-view>
     </div>
 </template>
